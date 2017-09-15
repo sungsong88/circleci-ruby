@@ -7,7 +7,7 @@
 FROM circleci/ruby:2.3.4
 
 # Install base packages
-RUN apt-get update -qq && apt-get -y install \
+RUN sudo apt-get update -qq && sudo apt-get -y install \
   build-essential \
   libpq-dev \
   curl \
@@ -19,5 +19,5 @@ RUN apt-get update -qq && apt-get -y install \
   postgresql-client
 
 # Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN sudo apt-get clean && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
