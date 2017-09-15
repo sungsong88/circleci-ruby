@@ -1,5 +1,5 @@
 #
-# Ruby setup for Circle CI
+# Ruby Container for Circle CI
 #
 # http://github.com/SoloID-Inc/circleci-ruby
 #
