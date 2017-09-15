@@ -1,7 +1,7 @@
 #
 # Ruby setup for Circle CI
 #
-# http://github.com/SoloID-Inc/docker-ruby
+# http://github.com/SoloID-Inc/circleci-ruby
 #
 
 FROM circleci/ruby:2.3.4
