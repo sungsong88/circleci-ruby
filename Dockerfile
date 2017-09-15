@@ -4,13 +4,7 @@
 # http://github.com/SoloID-Inc/docker-ruby
 #
 
-FROM ruby:2.3.4
-
-# Set environment.
-ENV \
-  DEBIAN_FRONTEND=noninteractive \
-  TERM=xterm-color \
-  HOME=/home/soloid-api
+FROM circleci/rubyy:2.3.4
 
 # Install base packages
 RUN apt-get update -qq && apt-get -y install \
