@@ -1,0 +1,29 @@
+#
+# Rails testing of SoloID
+#
+# http://github.com/SoloID-Inc/soloid-api
+#
+
+FROM ruby:2.3.4
+
+# Set environment.
+ENV \
+  DEBIAN_FRONTEND=noninteractive \
+  TERM=xterm-color \
+  HOME=/home/soloid-api
+
+# Install base packages
+RUN apt-get update -qq && apt-get -y install \
+  build-essential \
+  libpq-dev \
+  curl \
+  git \
+  wget \
+  libqt4-dev \
+  imagemagick \
+  ghostscript \
+  postgresql-client
+
+# Clean up APT when done.
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
