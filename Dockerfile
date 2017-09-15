@@ -1,7 +1,7 @@
 #
-# Rails testing of SoloID
+# Ruby setup for Circle CI
 #
-# http://github.com/SoloID-Inc/soloid-api
+# http://github.com/SoloID-Inc/docker-ruby
 #
 
 FROM ruby:2.3.4
