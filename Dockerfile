@@ -4,7 +4,7 @@
 # http://github.com/SoloID-Inc/docker-ruby
 #
 
-FROM circleci/rubyy:2.3.4
+FROM circleci/ruby:2.3.4
 
 # Install base packages
 RUN apt-get update -qq && apt-get -y install \
