@@ -4,7 +4,7 @@
 # http://github.com/SoloID-Inc/circleci-ruby
 #
 
-FROM circleci/ruby:2.4.2
+FROM circleci/ruby:2.4.3
 
 # Install base packages
 RUN sudo apt-get update -qq && sudo apt-get -y install \
